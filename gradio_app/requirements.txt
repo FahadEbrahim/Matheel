@@ -1,0 +1,6 @@
+gradio
+sentence-transformers
+numpy
+pandas
+rapidfuzz
+sentencepiece
