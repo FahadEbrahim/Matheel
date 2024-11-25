@@ -98,7 +98,7 @@ def get_sim_list(zipped_file,Ws, Wl, Wj, model_name,threshold,number_results):
 # Define the Gradio app
 with gr.Blocks() as demo:
     # Tab for similarity calculation
-    with gr.Tab("Code Similarity"):
+    with gr.Tab("Code Pair Similarity"):
         # Input components
         code1 = gr.Textbox(label="Code 1")
         code2 = gr.Textbox(label="Code 2")
@@ -138,7 +138,7 @@ with gr.Blocks() as demo:
         calculate_btn.click(calculate_similarity, inputs=[code1, code2, Ws, Wl, Wj, model_dropdown], outputs=output)
 
     # Tab for file upload and DataFrame output
-    with gr.Tab("File Upload"):
+    with gr.Tab("Code Collection Pair Similarity"):
         # File uploader component
         file_uploader = gr.File(label="Upload a Zip file",file_types=[".zip"])
 
