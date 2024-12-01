@@ -96,7 +96,7 @@ def get_sim_list(zipped_file,Ws, Wl, Wj, model_name,threshold,number_results):
     return result
 
 # Define the Gradio app
-with gr.Blocks() as demo:
+with gr.Blocks(theme=gr.themes.Glass()) as demo:
     # Tab for similarity calculation
     with gr.Tab("Code Pair Similarity"):
         # Input components
