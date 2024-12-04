@@ -13,7 +13,7 @@ from gradio_client import Client, handle_file
 
 client = Client("buelfhood/Matheel")
 result = client.predict(
-		zipped_file=handle_file('https://github.com/gradio-app/gradio/raw/main/test/test_files/sample_file.pdf'),
+		zipped_file=handle_file('zip file path'),
 		Ws=0.7,
 		Wl=0.3,
 		Wj=0,
