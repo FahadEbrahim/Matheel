@@ -49,7 +49,7 @@ def perform_paraphrase_mining(model, codes_list, weight_semantic, weight_levensh
         weight_levenshtein=weight_levenshtein,
         weight_jaro_winkler=weight_jaro_winkler
     )
-    
+
 def paraphrase_mining_with_combined_score(
     model,
     sentences: List[str],
@@ -160,7 +160,7 @@ with gr.Blocks(theme=gr.themes.Glass()) as demo:
             number_results = gr.Slider(1, 1000, value=10, label="Number of Returned pairs", step=1)
 
         # Output component for the DataFrame
-        df_output = gr.Dataframe(label="Uploaded Data")
+        df_output = gr.Dataframe(label="Results")
 
         # Button to trigger the file processing
         process_btn = gr.Button("Process File")
